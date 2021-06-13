@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="body">
+        <div class="tool-bar">
+            <div class="menu tool">
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="pencil tool">
+                <i class="fas fa-pencil-alt"></i>
+            </div>
+            <div class="eraser tool">
+                <i class="fas fa-eraser"></i>
+            </div>
+            <div class="zoomin tool">
+                <i class="fas fa-search-plus"></i>
+            </div>
+            <div class="zoomout tool">
+                <i class="fas fa-search-minus"></i>
+            </div>
+            <div class="effect tool">
+                <i class="fas fa-tint"></i>
+            </div>
+            <div class="undo tool">
+                <i class="fas fa-undo"></i>
+            </div>
+            <div class="redo tool">
+                <i class="fas fa-redo"></i>
+            </div>
+            <div class="fullscreen tool">
+                <i class="fas fa-compress"></i>
+            </div>
+        </div>
+        
+        <div class="toolbar-container">
+            <div class="toolbar menu-bar">
+                <div class="new" id ="nos">
+                    <i class="fas fa-file"></i>
+                </div>           
+                <div class="save" id="nos">
+                    <i class="fas fa-download"></i>
+                </div>
+            </div>
+            <div class="toolbar pencil-bar">
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="10" value="1" class="slider" id="myRange">
+                </div>
+                <div class="color-box">
+                    <!-- colorBox.js -->
+                </div>
+            </div>
+            <div class="toolbar eraser-bar">
+                <div class="eraserslider">
+                    <input type="range" min="20" max="500" value="1" class="eraser-slider" id="eraserRange">
+                </div>
+                
+            </div>
+            <div class="toolbar zoomin-bar"></div>
+            <div class="toolbar zoomout-bar"></div>
+            <div class="toolbar effect-bar">
+                <div class="effect-row">
+                    <div class="effect-col">
+                        <div class="color black1 black" id="color"></div>
+                    </div>
+                    <div class="effect-col">
+                        <div class="color purple #8458B3" id="color"></div>
+                    </div>
+                    <div class="effect-col">
+                        <div class="color blue #004E7C" id="color"></div>
+                    </div>
+                </div>
+                <div class="effect-row">
+                    <div class="effect-col">
+                        <div class="color nightBlue #2d545e" id="color"></div>
+                    </div>
+                    <div class="effect-col">
+                        <div class="color green #266150" id="color"></div>
+                    </div>
+                    <div class="effect-col">
+                        <div class="color blush #E8CEBF" id="color"></div>
+                    </div>
+                </div>
+            </div>  
+            <div class="toolbar redo-bar"></div>
+            <div class="toolbar undo-bar"></div>
+            <div class="toolbar fullscreen-bar"></div>
+        </div>
+
+        <div class="canvas-container">
+            <canvas class="canvas" width="1514px" height="860px"></canvas>
+        </div>
+    </div>
+
+    <script src="tool.js"></script>
+    <script src="color.js"></script>
+    
+    <script src="canvas.js"></script>
+    <script src="undo-redo.js"></script>
+    <script src="image.js"></script>
+    <script src="view.js"></script>
+    <script src="fullscreen.js"></script>
+    
+
+    
+</body>
+</html>
